@@ -2,9 +2,7 @@ package com.demoqa;
 
 import org.junit.jupiter.api.*;
 
-
 public class FirstJUnitTest {
-
 
     @BeforeAll
     static void  beforeAll(){
