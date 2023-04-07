@@ -7,5 +7,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation("com.codeborne:selenide:6.12.3")
+    testImplementation(
+            "com.codeborne:selenide:6.12.3",
+            "org.junit.jupiter:junit-jupiter:5.9.2"
+    )
+}
+
+test{
+    useJUnitPlatform()
 }
