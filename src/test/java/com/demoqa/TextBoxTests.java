@@ -14,6 +14,7 @@ public class TextBoxTests {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize ="1920x1080";
         Configuration.timeout = 3000;
+        Configuration.holdBrowserOpen = true;
     }
     @Test
     void successfullFillFromTest() {
