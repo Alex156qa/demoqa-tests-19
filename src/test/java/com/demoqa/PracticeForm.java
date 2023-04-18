@@ -17,6 +17,7 @@ public class PracticeForm {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 3000;
+        Configuration.holdBrowserOpen = true;
     }
 
     @Test
@@ -35,12 +36,11 @@ public class PracticeForm {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("July");
         $(".react-datepicker__year-select").selectOption("1996");
-        $(".react-datepicker__year-select").selectOption("1996");
 
         //<div class=" react-datepicker__day--030 react-datepicker__day--weekend react-datepicker__day--outside-month" aria-label="Choose Sunday, June 30th, 1996" >30</div>
         //   <div class=" react-datepicker__day--030"                                                                     aria-label="Choose Tuesday, July 30th, 1996" >30</div>
         $(".react-datepicker__day--030:not(.react-datepicker__day--outside-month)").click();
-        $("#subjectsInput").setValue("eng").pressEnter();
+        $("#subjectsInput").setValue("english").pressEnter();
         //  $(byText("Reading")).click();
         $("#hobbiesWrapper").$(byText("Music")).click();
         $("#uploadPicture").uploadFromClasspath("img/1.png");
