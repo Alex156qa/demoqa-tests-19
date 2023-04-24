@@ -52,6 +52,8 @@ public class PracticeForm {
         $("#submit").click();
         $(".modal-dialog").should(appear);
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Alex Popov"), text("popov@er.ru"), text("9229229222"));
+        $(".table-responsive").shouldHave(text("Alex Popov"), text("popov@er.ru"), text("9229229222"),
+                text("Male"), text("30 July 1996"), text("english"), text("Music"), text("img/1.png"),
+                text("Street 5"), text("NCR Delhi"));
     }
 }
